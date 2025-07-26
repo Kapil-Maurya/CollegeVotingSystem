@@ -1,12 +1,17 @@
+<p align="center">
+  <img src="https://your-image-url-here.com/header.png" alt="College Voting System Banner" />
+</p>
+
 <h1 align="center">🗳️ College Voting System</h1>
 
 <p align="center"><b>A secure online voting platform built for colleges using PHP, MySQL & XAMPP.</b></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-Type: Final Year Project-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-Type:%20Final%20Year%20Project-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Tech-PHP|MySQL|HTML|CSS-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
 </p>
+
 
 
 ---
