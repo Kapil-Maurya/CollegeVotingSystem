@@ -1,6 +1,15 @@
-# 🗳️ College Voting System
+<h1 align="center">🗳️ College Voting System</h1>
+<p align="center">
+  A secure and user-friendly web-based voting platform built for colleges and educational institutions.<br>
+  Developed using <b>PHP</b>, <b>MySQL</b>, <b>HTML</b>, and <b>CSS</b> — hosted locally with <b>XAMPP</b>.
+</p>
 
-A secure, web-based voting system designed for colleges and educational institutions to conduct elections online. This project was built using **PHP**, **MySQL**, **HTML**, **CSS**, and runs on a **XAMPP** local server.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-PHP-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/Database-MySQL-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/Server-XAMPP-red?style=flat-square" />
+</p>
 
 ---
 
