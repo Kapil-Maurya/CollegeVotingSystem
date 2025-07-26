@@ -1,15 +1,13 @@
 <h1 align="center">🗳️ College Voting System</h1>
-<p align="center">
-  A secure and user-friendly web-based voting platform built for colleges and educational institutions.<br>
-  Developed using <b>PHP</b>, <b>MySQL</b>, <b>HTML</b>, and <b>CSS</b> — hosted locally with <b>XAMPP</b>.
-</p>
+
+<p align="center"><b>A secure online voting platform built for colleges using PHP, MySQL & XAMPP.</b></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-PHP-blueviolet?style=flat-square" />
-  <img src="https://img.shields.io/badge/Database-MySQL-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS-orange?style=flat-square" />
-  <img src="https://img.shields.io/badge/Server-XAMPP-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/Project-Type: Final Year Project-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tech-PHP|MySQL|HTML|CSS-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
 </p>
+
 
 ---
 
