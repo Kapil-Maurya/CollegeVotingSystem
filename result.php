@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Voting System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .btn-special-2 {
+            padding: 12px 24px;
+            background-color: white;
+            color: hsl(243, 80%, 62%);
+            border-radius: 6px;
+            border: 2px hsl(243, 80%, 62%) solid;
+            transition: transform 250ms ease-in-out;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn-special-2:hover {
+            transform: scale(1.10);
+        }
+
+        .btn-special-2:active {
+            transform: scale(.9);
+        }
+
+        #footersection {
+            margin-top: 80px;
+        }
+
+        .h2_3 {
+            margin-top: 30px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .svg-container {
+            flex: 1 1 60%; /* Adjust the width of the SVG container */
+            max-width: 600px;
+            margin-top: 40px;
+        }
+
+        .buttons-container {
+            flex: 1 1 35%; /* Adjust the width of the buttons container */
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">Vote</h1>   
+        <div class="main">
+            <p><a href="index.php"><b>Home</b></a></p>
+            <p><a href="admin.php"><b>Admin</b></a></p>
+            <p><a href="year.php"><b>Candidate</b></a></p>
+            <p><a href="result.php"><b>Result</b></a></p>
+            <p><a href="about.html"><b>About</b></a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+
+            <div class="buttons-container">
+            <h2>Select Result Year</h2>
+
+                <div class="card">
+                    <a href="result1.php"><button class="btn-special-2">1<sup>st</sup> Year</button></a>
+                </div>
+                <div class="card">
+                    <a href="result2.php"><button class="btn-special-2">2<sup>nd</sup> Year</button></a>
+                </div>
+                <div class="card">
+                    <a href="result3.php"><button class="btn-special-2">3<sup>rd</sup> Year</button></a>
+                </div>
+            </div>
+            <div class="svg-container">
+                <!-- Display SVG image -->
+                <img src="result.php.svg" alt="result.svg" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<?php 
+if (file_exists("footer.html")) { 
+    include("footer.html"); 
+} else {
+    echo "<p style='color: red;'>Footer file is missing!</p>";
+}
+?>

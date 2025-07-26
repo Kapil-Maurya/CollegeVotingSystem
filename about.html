@@ -1,0 +1,203 @@
+<?php
+    session_start(); // Start session if needed
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Voting System </title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header {
+            background-color: #a1d7ec;
+            padding: 10px 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            margin: 0;
+        }
+        .main {
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+        }
+        .main p {
+            margin: 0;
+        }
+        .main p a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            color: #000;
+        }
+        .main p a:hover {
+            background-color: #67bcd8;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        .content {
+            background-color: #fff;
+            border: 2px solid #67bcd8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        ul li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        ul li:before {
+            content: "•";
+            color: #67bcd8;
+            display: inline-block; 
+            width: 10px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .btn-group {
+            margin-top: 20px;
+            text-align: center; /* Center the button */
+        }
+        .btn-group a {
+            display: inline-block;
+            background-color: #67bcd8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+        .btn-group a:hover {
+            background-color: #4eaac1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+        blockquote {
+            font-style: italic;
+            background: #e0f2f7;
+            padding: 10px 20px;
+            border-left: 5px solid #67bcd8;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">Vote</h1>
+        <div class="main">
+            <p><a href="index.php"><b>Home</b></a></p>
+            <p><a href="admin.php"><b>Admin</b></a></p>
+            <p><a href="year.php"><b>Candidate</b></a></p>
+            <p><a href="result.php"><b>Result</b></a></p>
+            <p><a href="about.html"><b>About</b></a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>About Online Voting</h1>
+            <p>Online voting systems are software platforms used to securely conduct votes and elections. As a digital platform, they eliminate the need to cast your votes using paper or having to gather in person.</p>
+            <p>They also protect the integrity of your vote by preventing voters from being able to vote multiple times.</p>
+            <p>Many secure voting platform vendors provide supportive vote management consulting services that help organizations design and implement their voting procedures.</p>
+            <p>These services help organizations save time, stick to best practices, and meet internal requirements and/or external regulations, such as third-party vote administration needs.</p>
+        </div>
+
+        <div class="content">
+            <h1>How It Works</h1>
+            <ul>
+                <li>Step 1: Register or log in as a voter</li>
+                <li>Step 2: View candidates from your year</li>
+                <li>Step 3: Cast your vote securely</li>
+                <li>Step 4: See live or final results</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Key Features</h1>
+            <ul>
+                <li>100% Secure and Encrypted</li>
+                <li>Real-time Results</li>
+                <li>Multi-Year Voting Support</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>What Students Say</h1>
+            <blockquote>"It was easy and secure!" - Priya, 2nd Year</blockquote>
+            <blockquote>"Loved how quick the voting process was!" - Amit, 3rd Year</blockquote>
+        </div>
+
+        <div class="content">
+            <h1>Frequently Asked Questions</h1>
+            <ul>
+                <li><strong>Q:</strong> Can I change my vote? <br><strong>A:</strong> No, once submitted, a vote is final.</li>
+                <li><strong>Q:</strong> Is my identity visible? <br><strong>A:</strong> No, votes are anonymous.</li>
+            </ul>
+        </div>
+
+        <div class="content btn-group">
+            <a href="admin.php">Register to Vote</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 College Voting System | <a href="mailto:help@collegevote.edu">help@collegevote.edu</a></p>
+        </footer>
+    </div>
+</body>
+</html>
